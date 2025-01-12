@@ -1,0 +1,26 @@
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--mainColor);
+    color: var(--typoColor);
+    padding: 2em 0;
+}
+
+main .text{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    align-items: flex-start;
+    width: clamp(20em, 50dvw, 30em);
+}
+
+.name{
+    color: var(--largetextoColor);
+}
+
+@media screen and (max-width: 600px) {
+    main{
+        flex-direction: column-reverse;
+    }
+}
