@@ -1,8 +1,18 @@
 import './why-hire-section.css'
+import { useRef } from 'react';
+import useAnimation from '../../../hooks/useAnimation';
 function WhyHireSection() {
+    let containerRef = useRef([]);
+    const animationObj = {
+        duration: 1,
+        opacity: 0,
+        ease: 'power2.inOut',
+    };
+    useAnimation(containerRef.current, animationObj, { threshold: 0.3, rootMargin: '10px' }, false);
+
     return (
-        <div className="why-hire-section">
-            <div className="container">
+        <section id='section2' className="why-hire-section section-home">
+            <div ref={el => (containerRef.current[0] = el)} className="container">
                 <h2>WHY HIRE ME?</h2>
                 <p>
                     As a passionate front-end developer, I specialize in crafting user-friendly, responsive, and visually appealing web interfaces.
@@ -10,7 +20,7 @@ function WhyHireSection() {
                     and react allows me to transform ideas into dynamic, functional websites that provide exceptional user experiences.
                 </p>
             </div>
-        </div>
+        </section>
     );    
 }
 

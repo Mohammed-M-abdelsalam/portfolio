@@ -1,0 +1,17 @@
+.dots{
+    position: fixed;
+    top: 50%;
+    right: 3%;
+}
+
+.dots div{
+    font-weight: bolder;
+    font-size: 3rem;
+    margin: 0 0.5rem;
+    color: var(--diffrentColor);
+    cursor: pointer;
+}
+
+.dots .active{
+    color: var(--secoundaryColor);
+}

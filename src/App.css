@@ -13,6 +13,7 @@
     --largetextoColor: #CC5500;
     --lighttypoColor: #ffffff;
     --darktypoColor: #000000;
+    --shadowColor : rgba(0, 0, 0, 0.1);
 }
 
 html{
@@ -28,6 +29,7 @@ body{
     --diffrentColor: #001B44;
     --largetextoColor: #CC5500;
     --typoColor: #000000;
+    --shadowColor : rgba(0, 0, 0, 0.1);
 }
 [data-theme="dark"]{
     --mainColor: #001B44;
@@ -35,15 +37,17 @@ body{
     --diffrentColor: #F2E9D9;
     --largetextoColor: #E3735E;
     --typoColor: #ffffff;
+    --shadowColor : rgba(255, 255, 255, 0.2);
 }
 
 @media (prefers-color-scheme: dark) {
     :root {
-      --mainColor: #001B44;
-      --secoundaryColor: #D4AF37;
-      --diffrentColor: #F2E9D9;
-      --largetextoColor: #E3735E;
-      --typoColor: #ffffff;
+        --mainColor: #001B44;
+        --secoundaryColor: #D4AF37;
+        --diffrentColor: #F2E9D9;
+        --largetextoColor: #E3735E;
+        --typoColor: #ffffff;
+        --shadowColor : rgba(255, 255, 255, 0.2);
     }
 }
 @media (prefers-color-scheme: light) {
@@ -53,6 +57,7 @@ body{
       --diffrentColor: #001B44;
       --largetextoColor: #CC5500;
       --typoColor: #000000;
+      --shadowColor : rgba(0, 0, 0, 0.1);
     }
     
 }

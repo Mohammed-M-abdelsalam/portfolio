@@ -1,10 +1,37 @@
 .btn{
+    display: inline-block;
     position: relative;
-    background-color: var(--diffrentColor);
-    border: none;
+    background-color: transparent;
+    border: 1px solid var(--diffrentColor);
     padding: 10px 20px;
-    color: var(--mainColor);
+    color: var(--diffrentColor);
     cursor: pointer;
     font-weight: bold;
+    font-size: 1rem;
     letter-spacing: 0.05em;
+    z-index: 0;
 }
+
+.btn::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 100%;
+    left: 0;
+    background: var(--diffrentColor);
+    opacity: 0;
+    transition: all 0.4s;
+    z-index: -1;
+}
+
+.btn:hover, .btn:focus{
+    color: var(--mainColor);
+}
+.btn:hover::before, .btn:focus::before {
+    left: 0;
+    right: 0;
+    opacity: 1;
+}
+
+

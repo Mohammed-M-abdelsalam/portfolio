@@ -1,7 +1,10 @@
 import './button.css'
-function Button({children}) {
+
+function Button({children, callback=null}) {
     return (
-        <button className='btn'>{children}</button>
+        <button onClick={callback} className='btn'>
+            <span className='span'> {children} </span>
+        </button>
     )
 }
 

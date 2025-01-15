@@ -3,7 +3,7 @@
     justify-content: center;
     flex-wrap: wrap;
     padding: 2em;
-    gap: 1em;
+    gap: 2em;
 }
 
 .simple-cards>.card{

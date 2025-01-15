@@ -36,7 +36,7 @@ function Nav({toggleTheme}) {
                     <span className="material-symbols-outlined">close</span> 
                 </button>
                 <button tabIndex={isVisible ? 0 : -1} className="dark-mode-mobile" aria-label="dark mode" onClick={toggleTheme}>
-                    <span className="material-symbols-outlined">dark_mode</span>
+                    <span className="material-symbols-outlined"> {localStorage.getItem("theme") === "dark" ? "light_mode" : "dark_mode"}</span>
                 </button>
                 <ul>
                     <li><NavLink tabIndex={isVisible || isLaptop ? 0 : -1} to="/">Home</NavLink></li>
@@ -44,9 +44,11 @@ function Nav({toggleTheme}) {
                     <li><NavLink tabIndex={isVisible || isLaptop ? 0 : -1} to="/projects">projects</NavLink></li>
                 </ul>
             </nav>
-            <button className="dark-mode" aria-label="dark mode" onClick={toggleTheme}>
-                <span className="material-symbols-outlined">dark_mode</span>
-            </button>
+            {
+                <button className="dark-mode" aria-label="dark mode" onClick={toggleTheme}>
+                    <span className="material-symbols-outlined"> {localStorage.getItem("theme") === "dark" ? "light_mode" : "dark_mode"}</span>
+                </button>
+            }
             <button className="menu" aria-label="show navigation menu" onClick={showNav}>
                 <span className="material-symbols-outlined">menu </span>       
             </button>

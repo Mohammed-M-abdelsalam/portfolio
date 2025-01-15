@@ -4,6 +4,7 @@
     align-items: center;
     background-color: var(--mainColor);
     padding: 1.5em;
+    box-shadow: 0 0 10px var(--shadowColor);
     position: sticky;
     top: 0;
     left: 0;

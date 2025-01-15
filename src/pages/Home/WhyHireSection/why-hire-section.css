@@ -1,8 +1,10 @@
 .why-hire-section{
     display: flex;
     flex-direction: column;
+    justify-content: center;
     gap: 1em;
     text-align: center;
+    height: 80vh;
     padding: 2em;
     background-color: var(--mainColor);
 }

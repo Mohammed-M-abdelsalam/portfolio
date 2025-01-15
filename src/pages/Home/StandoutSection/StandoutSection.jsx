@@ -7,12 +7,12 @@ function StandoutSection() {
         {title: "Team Player", content: "With experience collaborating with back-end developers and designers, I excel at integrating creative ideas into cohesive solutions."},
     ]
     return (
-        <div className="standout-section">
+        <section id='section3' className="standout-section section-home">
             <div className="container">
-                <h2>STAND OUT</h2>
+                <h2>WHY I STAND OUT</h2>
                 <SimpleCards data={cardData} />
             </div>
-        </div>
+        </section>
     );
 }
 

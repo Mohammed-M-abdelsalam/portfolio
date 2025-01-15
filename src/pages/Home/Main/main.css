@@ -4,6 +4,7 @@ main{
     align-items: center;
     background-color: var(--mainColor);
     color: var(--typoColor);
+    height: 80vh;
     padding: 2em 0;
 }
 
@@ -15,7 +16,17 @@ main .text{
     width: clamp(20em, 50dvw, 30em);
 }
 
+.img{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
 .name{
+    position: absolute;
+    display: inline-block;
+    margin-left: 0.2em;
     color: var(--largetextoColor);
 }
 
