@@ -7,6 +7,7 @@ import useAnimation from '../../../hooks/useAnimation';
 function HomeMain() {
     const imgRef = useRef([]), nameRef = useRef([]);
     const animationObj = {
+        duration: 1,
         opacity: 0,
         y: 50,
         x: -50,
@@ -16,9 +17,13 @@ function HomeMain() {
     }
     const animationObj2 = {
         duration: 2,
-        x: 500,
-        ease: 'elastic',
+        width: 20,
+        ease: 'power2.inOut',
+        onComplete : () => {
+            nameRef.current[0].style.border = 'none';
+        }
     }
+
     useAnimation(imgRef.current, animationObj);
     useAnimation(nameRef.current, animationObj2);
 

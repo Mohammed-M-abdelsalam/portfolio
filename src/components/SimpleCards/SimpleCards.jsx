@@ -16,6 +16,7 @@ function SimpleCards({ data }) {
     <div className="simple-cards">
       {data.map((el, index) => (
         <div
+          tabIndex={0}
           key={index}
           className="card"
           aria-label={el.title}

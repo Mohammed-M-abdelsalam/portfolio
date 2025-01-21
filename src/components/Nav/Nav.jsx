@@ -35,7 +35,7 @@ function Nav({toggleTheme}) {
                 <button tabIndex={isVisible ? 0 : -1} ref={closeRef} className="close-nav" aria-label="close navigation menu" onClick={closeNav}>
                     <span className="material-symbols-outlined">close</span> 
                 </button>
-                <button tabIndex={isVisible ? 0 : -1} className="dark-mode-mobile" aria-label="dark mode" onClick={toggleTheme}>
+                <button tabIndex={isVisible ? 0 : -1} className="dark-mode-mobile" aria-label={localStorage.getItem("theme") === "dark" ? "switch tolight mode" : "switch to dark mode"} onClick={toggleTheme}>
                     <span className="material-symbols-outlined"> {localStorage.getItem("theme") === "dark" ? "light_mode" : "dark_mode"}</span>
                 </button>
                 <ul>
@@ -45,12 +45,12 @@ function Nav({toggleTheme}) {
                 </ul>
             </nav>
             {
-                <button className="dark-mode" aria-label="dark mode" onClick={toggleTheme}>
+                <button className="dark-mode" aria-label={localStorage.getItem("theme") === "dark" ? "switch tolight mode" : "switch to dark mode"} onClick={toggleTheme}>
                     <span className="material-symbols-outlined"> {localStorage.getItem("theme") === "dark" ? "light_mode" : "dark_mode"}</span>
                 </button>
             }
-            <button className="menu" aria-label="show navigation menu" onClick={showNav}>
-                <span className="material-symbols-outlined">menu </span>       
+            <button tabIndex={isVisible ? -1 : 0} className="menu" aria-label="show navigation menu" onClick={showNav}>
+                <span className="material-symbols-outlined"> menu </span>       
             </button>
         </div>
     )

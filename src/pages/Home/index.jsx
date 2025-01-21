@@ -6,13 +6,13 @@ import WhyHireSection from './WhyHireSection/WhyHireSection';
 import ContactSection from './ContactSection/ContactSection';
 
 function Home() {
-    const [target, setTarget] = useState([])
-    useEffect(()=>{
-        setTarget(document.querySelectorAll('.section-home'))
-    }, [])
+    // const [target, setTarget] = useState([])
+    // useEffect(()=>{
+    //     setTarget(document.querySelectorAll('.section-home'))
+    // }, [])
     return (
         <>
-            <Dots targetArr={target}  />
+            <Dots target={'.section-home'}  />
             <HomeMain />
             <WhyHireSection />
             <StandoutSection />

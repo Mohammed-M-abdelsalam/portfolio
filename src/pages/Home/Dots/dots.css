@@ -1,17 +1,19 @@
 .dots{
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
     position: fixed;
     top: 50%;
-    right: 3%;
+    right: 4%;
 }
 
-.dots div{
-    font-weight: bolder;
-    font-size: 3rem;
-    margin: 0 0.5rem;
-    color: var(--diffrentColor);
+.dots .dot{
     cursor: pointer;
+    padding: 0.2em;
+    border-radius: 50%;
+    background-color: var(--diffrentColor);
 }
 
 .dots .active{
-    color: var(--secoundaryColor);
+    background-color: var(--secoundaryColor);
 }
