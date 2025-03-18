@@ -6,7 +6,7 @@ function useAnimation(targets, object, options=null, unObserve=true) {
         const observer = new IntersectionObserver((entries) => {
           entries.forEach((entry) => {
             if (entry.isIntersecting) {
-              gsap.from(entry.target, object);
+              gsap.to(entry.target, object);
               unObserve && observer.unobserve(entry.target); 
             }
           });

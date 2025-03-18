@@ -1,35 +1,18 @@
 .nav-container {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
     background-color: var(--mainColor);
-    padding: 1.5em;
     box-shadow: 0 0 10px var(--shadowColor);
     position: sticky;
     top: 0;
-    left: 0;
-    right: 0;
     z-index: 1000;
 }
 
 .logo{
-    font-size: 1.5em;
-    font-weight: bold;
     color: var(--diffrentColor);
 }
 
-nav{
-    display: flex;
-    width: 15em;
-    justify-content: space-between;
-    align-items: center;
-}
 nav a{
-    position: relative;
-    text-decoration: none;
     color: var(--typoColor);
-    font-size: 1.1em;
-    transition: 0.5s ease-in-out;
+    transition: transform 0.5s ease-in-out;
 }
 nav a::after{
     content: '';
@@ -78,7 +61,7 @@ nav ul{
     top: 1em;
     right: 1em;
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 768px){
     nav{
         flex-direction: column;
         gap: 1em;

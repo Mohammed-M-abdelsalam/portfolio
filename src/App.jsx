@@ -1,3 +1,4 @@
+import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css'
 import Nav from './components/Nav/Nav'
 import Routing from './routes/Routing'

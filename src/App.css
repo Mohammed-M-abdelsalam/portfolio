@@ -3,17 +3,21 @@
     padding: 0;
     box-sizing: border-box;
     font-family: "Roboto", sans-serif;
+    line-height: 1.6;
 }
-
 
 :root{
     --mainColor: #F2E9D9;
     --secoundaryColor: #D4AF37;
-    --diffrentColor: #001B44;
+    --diffrentColor: #17212B;
     --largetextoColor: #CC5500;
     --lighttypoColor: #ffffff;
     --darktypoColor: #000000;
     --shadowColor : rgba(0, 0, 0, 0.1);
+}
+
+.container{
+    padding-inline: 3rem;
 }
 
 html{
@@ -26,13 +30,13 @@ body{
 [data-theme="light"]{
     --mainColor: #F2E9D9;
     --secoundaryColor: #D4AF37;
-    --diffrentColor: #001B44;
+    --diffrentColor: #17212B ;
     --largetextoColor: #CC5500;
     --typoColor: #000000;
     --shadowColor : rgba(0, 0, 0, 0.1);
 }
 [data-theme="dark"]{
-    --mainColor: #001B44;
+    --mainColor: #17212B ;
     --secoundaryColor: #D4AF37;
     --diffrentColor: #F2E9D9;
     --largetextoColor: #E3735E;

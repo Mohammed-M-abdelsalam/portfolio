@@ -1,12 +1,6 @@
 .standout-section{
     background-color: var(--mainColor);
-    text-align: center;
 }
-.standout-section>.container{
-    padding-top: 10em;
-}
-.standout-section>.container>h2{
+.standout-section h2{
     color: var(--diffrentColor);
-    font-size: 2rem;
-    font-weight: bold;
 }

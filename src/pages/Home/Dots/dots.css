@@ -5,6 +5,7 @@
     position: fixed;
     top: 50%;
     right: 4%;
+    z-index: 100;
 }
 
 .dots .dot{

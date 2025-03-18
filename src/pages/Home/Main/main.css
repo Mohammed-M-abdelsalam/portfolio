@@ -1,40 +1,46 @@
-main{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+header{
     background-color: var(--mainColor);
     color: var(--typoColor);
-    height: 80vh;
-    padding: 2em 0;
 }
 
-main .text{
-    display: flex;
-    flex-direction: column;
-    gap: 1em;
-    align-items: flex-start;
-    width: clamp(20em, 50dvw, 30em);
+header main .img>img{
+    transition: transform 0.5s;
+    animation: circle 4s;
+}
+header main .img>img:hover{
+    transform: scale(1.3) !important;
 }
 
-.img{
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
-    overflow: hidden;
-}
-
-.name{
-    position: absolute;
-    display: inline-block;
-    margin-left: 0.2em;
+header .name{
+    width: 20px;
+    max-width: fit-content;
+    line-height: normal;
     color: var(--largetextoColor);
-    overflow: hidden;
     white-space: nowrap;
     border-right: 1px solid var(--typoColor);
 }
 
-@media screen and (max-width: 600px) {
-    main{
-        flex-direction: column-reverse;
+
+@keyframes circle {
+    0% {
+      clip-path: circle(100% at 50% 50%);
+      transform: scale(1.5);
     }
-}
+    20% {
+      clip-path: circle(15% at 50% 50%);
+    }
+    40% {
+      clip-path: circle(15% at 30% 50%);
+    }
+    60% {
+      clip-path: circle(15% at 80% 50%);
+    }
+    80% {
+      clip-path: circle(15% at 50% 50%);
+    }
+    100% {
+      clip-path: circle(100% at 50% 50%);
+    }
+  }
+
+
