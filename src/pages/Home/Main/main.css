@@ -2,6 +2,9 @@ header{
     background-color: var(--mainColor);
     color: var(--typoColor);
 }
+header>main{
+    min-height: 100vh;
+}
 
 header main .img>img{
     transition: transform 0.5s;
