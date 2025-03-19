@@ -22,7 +22,7 @@ function HomeMain() {
         document.querySelector('#section4').scrollIntoView({behavior:'smooth'})
     }
     return (
-        <header id='section1' className='section-home py-5'>
+        <header id='section1' className='section-home py-2'>
             <main className='container d-flex justify-content-center align-items-center'>
                 <div className="row row-cols-lg-2 g-5 flex-column-reverse flex-lg-row justify-content-between align-items-center">
                     <div className="text">
