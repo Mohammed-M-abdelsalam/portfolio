@@ -8,7 +8,7 @@ function WhyHireSection() {
         opacity: 1,
         ease: 'power2.inOut',
     };
-    useAnimation(containerRef.current, animationObj, {threshold: 0.5});
+    useAnimation(containerRef.current, animationObj, {threshold: 0.1});
 
     return (
         <section tabIndex={0} aria-label='why hire me' id='section2' className="why-hire-section section-home py-5">
