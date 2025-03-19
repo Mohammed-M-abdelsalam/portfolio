@@ -22,8 +22,8 @@ function HomeMain() {
         document.querySelector('#section4').scrollIntoView({behavior:'smooth'})
     }
     return (
-        <header id='section1' className='section-home'>
-            <main className='container vh-100 d-flex justify-content-center align-items-center'>
+        <header id='section1' className='section-home py-5'>
+            <main className='container d-flex justify-content-center align-items-center'>
                 <div className="row row-cols-lg-2 g-5 flex-column-reverse flex-lg-row justify-content-between align-items-center">
                     <div className="text">
                         <h1 className='position-relative'>Hi <br /> I&apos;m <span ref={el => {nameRef.current[0] = el}} className='name fw-bold position-absolute overflow-hidden px-2'>Mohamed Magdy</span></h1>

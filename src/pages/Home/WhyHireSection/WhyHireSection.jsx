@@ -11,8 +11,8 @@ function WhyHireSection() {
     useAnimation(containerRef.current, animationObj, {threshold: 0.5});
 
     return (
-        <section tabIndex={0} aria-label='why hire me' id='section2' className="why-hire-section section-home">
-            <div ref={el => (containerRef.current[0] = el)} className="why-hire-container container vh-100">
+        <section tabIndex={0} aria-label='why hire me' id='section2' className="why-hire-section section-home py-5">
+            <div ref={el => (containerRef.current[0] = el)} className="why-hire-container container">
                 <div className="row justify-content-center align-items-center h-100">
                     <div>
                         <h2 className='fw-bold pb-3'>WHY HIRE ME?</h2>
