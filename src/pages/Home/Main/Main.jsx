@@ -1,4 +1,4 @@
-import { useRef } from 'react';
+import { useRef, useState } from 'react';
 import img from '../../../assets/images/p.png'
 import Button from '../../../components/Button'
 import './main.css'
@@ -6,7 +6,7 @@ import useAnimation from '../../../hooks/useAnimation';
 
 function HomeMain() {
     const nameRef = useRef([]);
-
+    const [isLoaded, setIsLoaded] = useState(false)
     const animationObj = {
         duration: 4,
         width: '100%',
@@ -15,7 +15,6 @@ function HomeMain() {
             nameRef.current[0].style.border = 'none';
         }
     }
-
     useAnimation(nameRef.current, animationObj);
 
     const btnCallback = () => {
@@ -31,7 +30,7 @@ function HomeMain() {
                         <Button callback={btnCallback}> get in touch </Button>
                     </div>
                     <div className='img overflow-hidden rounded-2 p-0' style={{width: '300px', maxHeight: '300px'}}>
-                        <img width={'100%'} src={img} alt="personal photo" />
+                        <img onLoad={()=> setIsLoaded(true)} className={isLoaded ? 'personal-img' : ''} width={'100%'} src={img} alt="personal photo" />
                     </div>
                 </div>
             </main>

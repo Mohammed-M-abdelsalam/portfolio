@@ -6,11 +6,11 @@ header>main{
     min-height: 100vh;
 }
 
-header main .img>img{
+header main .img>.personal-img{
     transition: transform 0.5s;
     animation: circle 4s;
 }
-header main .img>img:hover{
+header main .img>.personal-img:hover{
     transform: scale(1.3) !important;
 }
 

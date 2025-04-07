@@ -11,7 +11,7 @@ function App() {
     localStorage.setItem('theme', newTheme);
   }
   return (
-    <div data-theme={theme}>
+    <div id='app' data-theme={theme}>
       <Nav toggleTheme={toggleTheme} />
       <Routing />
     </div>

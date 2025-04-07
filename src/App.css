@@ -1,7 +1,4 @@
 *, *::before, *::after{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
     font-family: "Roboto", sans-serif;
     line-height: 1.6;
 }
@@ -27,6 +24,10 @@ html{
 body{
     overflow-x: hidden;
 }
+#app{
+    background-color: var(--mainColor);
+}
+
 
 [data-theme="light"]{
     --mainColor: #F2E9D9;
@@ -47,7 +48,7 @@ body{
 
 @media (prefers-color-scheme: dark) {
     :root {
-        --mainColor: #001B44;
+        --mainColor: #17212B;
         --secoundaryColor: #D4AF37;
         --diffrentColor: #F2E9D9;
         --largetextoColor: #E3735E;
@@ -59,7 +60,7 @@ body{
     :root {
       --mainColor: #F2E9D9;
       --secoundaryColor: #D4AF37;
-      --diffrentColor: #001B44;
+      --diffrentColor: #17212B;
       --largetextoColor: #CC5500;
       --typoColor: #000000;
       --shadowColor : rgba(0, 0, 0, 0.1);

@@ -1,23 +1,12 @@
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
+import { ScrollTrigger } from "gsap/all";
 
-function useAnimation(targets, object, options=null, unObserve=true) {
+function useAnimation(targets, object) {
+    gsap.registerPlugin(ScrollTrigger);
     useGSAP(() => {
-        const observer = new IntersectionObserver((entries) => {
-          entries.forEach((entry) => {
-            if (entry.isIntersecting) {
-              gsap.to(entry.target, object);
-              unObserve && observer.unobserve(entry.target); 
-            }
-          });
-        }, options);
-    
-        targets.forEach((el) => observer.observe(el));
-    
-        return () => {
-          observer.disconnect(); 
-        };
-      }, []); 
+      gsap.to(targets, object);
+    }, []); 
 }
 
 export default useAnimation;

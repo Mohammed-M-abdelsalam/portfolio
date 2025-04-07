@@ -4,14 +4,19 @@ import useAnimation from '../../../hooks/useAnimation';
 function WhyHireSection() {
     let containerRef = useRef([]);
     const animationObj = {
-        duration: 1,
         opacity: 1,
+        duration: 0.5,
         ease: 'power2.inOut',
+        scrollTrigger: {
+            trigger: containerRef.current,
+            start: 'top bottom',
+            toggleActions: 'play none none reverse',
+        },
     };
     useAnimation(containerRef.current, animationObj, {threshold: 0.1});
 
     return (
-        <section tabIndex={0} aria-label='why hire me' id='section2' className="why-hire-section section-home py-5">
+        <section tabIndex={0} aria-label='why hire me' id='section2' className="why-hire-section section-home py-5 ">
             <div ref={el => (containerRef.current[0] = el)} className="why-hire-container container">
                 <div className="row justify-content-center align-items-center h-100">
                     <div>
