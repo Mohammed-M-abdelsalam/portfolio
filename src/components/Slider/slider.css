@@ -1,0 +1,50 @@
+.slider {
+    height: 200px;
+    position: relative;
+}
+.slider::after{
+    content: "";
+    position: absolute;
+    inset: 0;
+    box-shadow: inset 15px 0 20px -5px var(--mainColor), inset -15px 0 20px -5px var(--mainColor);
+    z-index: 1;
+}
+
+.slide-track {
+    width: fit-content;
+    animation: scroll 10s linear infinite;
+}
+
+.c {
+    width: 300px;
+    height: 200px;
+    background-color: var(--diffrentColor);
+    border-radius: 10px;
+    transition: background-color 0.5s ease-in-out;
+}
+
+.slide-track-reverse {
+    width: fit-content;
+    animation: scroll-reverse 10s linear infinite;
+}
+
+.slider:hover .slide-track, .slider:hover .slide-track-reverse {
+    animation-play-state: paused;
+}
+
+@keyframes scroll {
+    from{
+        transform: translateX(0);
+    }
+    to{
+        transform: translateX(-50.3%); 
+    }
+}
+@keyframes scroll-reverse {
+    from{
+        transform: translateX(-50.3%);
+    }
+    100% {
+        transform: translateX(0); 
+    }
+}

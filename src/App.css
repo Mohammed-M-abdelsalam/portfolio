@@ -14,7 +14,7 @@
 }
 
 .container{
-    padding-inline: 3rem;
+    /* padding-inline: 3rem; */
 }
 
 html{
@@ -25,22 +25,24 @@ body{
     overflow-x: hidden;
 }
 #app{
+    overflow: hidden;
     background-color: var(--mainColor);
 }
 
 
 [data-theme="light"]{
-    --mainColor: #F2E9D9;
+    --mainColor: #fffbdf;
     --secoundaryColor: #D4AF37;
     --diffrentColor: #17212B ;
     --largetextoColor: #CC5500;
     --typoColor: #000000;
     --shadowColor : rgba(0, 0, 0, 0.1);
+    
 }
 [data-theme="dark"]{
     --mainColor: #17212B ;
     --secoundaryColor: #D4AF37;
-    --diffrentColor: #F2E9D9;
+    --diffrentColor: #fffbdf;
     --largetextoColor: #E3735E;
     --typoColor: #ffffff;
     --shadowColor : rgba(255, 255, 255, 0.2);

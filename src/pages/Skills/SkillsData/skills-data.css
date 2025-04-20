@@ -1,0 +1,16 @@
+.skills-data{
+    color: var(--mainColor);
+    background-color: var(--diffrentColor);
+}
+
+.skills-title::after{
+    content: '';
+    width: 0;
+    background-color: var(--mainColor);
+    position: absolute;
+    bottom: -20px;
+    left: 0;
+    border-radius: 10px;
+    height: 2px;
+    width: 70%;
+}
