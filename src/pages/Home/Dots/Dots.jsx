@@ -30,7 +30,7 @@ function Dots({target}){
         }
         
         return (
-            <div className="dots d-none d-sm-flex">
+            <div className="dots d-none d-md-flex">
             {   
                 countRef.current.map(el => <div key={el} data-section={`section${el}`} className={active !== null && active === `section${el}` ? 'active dot' : 'dot'} onClick={handleClick}></div>)
             }

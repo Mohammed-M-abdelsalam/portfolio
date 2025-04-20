@@ -25,7 +25,7 @@ function HomeMain() {
             <main className='container d-flex justify-content-center align-items-center'>
                 <div className="row row-cols-lg-2 g-5 flex-column-reverse flex-lg-row justify-content-between align-items-center">
                     <div className="text">
-                        <h1 className='position-relative'>Hi <br /> I&apos;m <span ref={el => {nameRef.current[0] = el}} className='name fw-bold position-absolute overflow-hidden px-2'>Mohamed Magdy</span></h1>
+                        <h1 className='position-relative'>Hi <br /> I&apos;m <span ref={el => {nameRef.current[0] = el}} className='name fw-bold position-absolute overflow-hidden px-2'>Mohammed Magdy</span></h1>
                         <p>Aspiring front-end developer with solid  foundation in web development and a passion for building robust, responsive web appications</p>
                         <Button callback={btnCallback}> get in touch </Button>
                     </div>

@@ -6,9 +6,9 @@
     color: var(--diffrentColor);
 }
 .contact-section a{
-    color: var(--largetextoColor);
-    transition: color 0.3s;
+    color: var(--diffrentColor);
+    transition: transform 0.5s;
 }
 .contact-section a:hover{
-    color: var(--diffrentColor);
+    transform: rotate(360deg);
 }

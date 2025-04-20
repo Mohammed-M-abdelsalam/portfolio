@@ -21,19 +21,19 @@ function ContactSection() {
                     <div className="col text-center mt-3">
                         <div className="socials d-md-flex justify-content-around align-items-center py-3">
                             <h2 id='socials' className='m-0'> SOCIALS </h2>
-                            <ul className='list-unstyled d-flex justify-content-center mt-3' aria-labelledby='socials'>
+                            <ul className='list-unstyled d-flex justify-content-center gap-3 mt-3' aria-labelledby='socials'>
                                 <li>
-                                    <a className='text-decoration-none' href='https://github.com/Mohammed-M-abdelsalam' target="_blank">
+                                    <a className='text-decoration-none btn p-2' href='https://github.com/Mohammed-M-abdelsalam' target="_blank">
                                         <FaGithub className='fs-3'/>
                                     </a>
                                 </li>
-                                <li className='mx-3'>
-                                    <a className='text-decoration-none' href='https://www.linkedin.com/in/mohammed-m-abdelsalam/' target="_blank">
+                                <li>
+                                    <a className='text-decoration-none btn p-2' href='https://www.linkedin.com/in/mohammed-m-abdelsalam/' target="_blank">
                                         <FaLinkedin className='fs-3'/>
                                     </a>
                                 </li>
                                 <li>
-                                    <a className='text-decoration-none' href='https://wa.me/201008840871' target="_blank">
+                                    <a className='text-decoration-none btn p-2' href='https://wa.me/201008840871' target="_blank">
                                         <FaWhatsapp className='fs-3'/>
                                     </a>
                                 </li>
