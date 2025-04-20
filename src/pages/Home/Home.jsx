@@ -6,7 +6,7 @@ import ContactSection from './ContactSection/ContactSection';
 
 function Home() {
     return (
-        <>
+        <>  
             <Dots target={'.section-home'}  />
             <HomeMain />
             <WhyHireSection />
