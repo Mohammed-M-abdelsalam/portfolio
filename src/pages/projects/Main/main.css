@@ -25,9 +25,6 @@ object-fit: cover;
 background: var(--mainColor);
 }
 
-.swiper-paggination-bullets {
-    /* bottom: 10px; */
-}
 .swiper-pagination-bullet {
     background: #6c8f04;
     opacity: 0.5;
