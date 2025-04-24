@@ -9,7 +9,7 @@ import js1 from '../../../assets/images/projects/js1.png'
 import js1700x2 from '../../../assets/images/projects/js1x2.jpg'
 import js2 from '../../../assets/images/projects/js2.jpg'
 import js3 from '../../../assets/images/projects/js2.avif'
-function Main(){
+function ProjectsMain(){
     return(
         <main>
             <Swiper
@@ -88,4 +88,4 @@ function Main(){
     )
 }
 
-export default Main;
+export default ProjectsMain;

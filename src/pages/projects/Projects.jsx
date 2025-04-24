@@ -1,9 +1,9 @@
-import Main from "./Main";
+import ProjectsMain from "./Main";
 
 function Projects() {
     return (
         <>
-            <Main />
+            <ProjectsMain />
         </>
     )
 }
