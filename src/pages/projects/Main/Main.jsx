@@ -84,7 +84,6 @@ function Main(){
                 </SwiperSlide>
                 <SwiperSlide>Horizontal Slide 3</SwiperSlide>
             </Swiper>
-            <div className="vh-100"></div>
         </main>
     )
 }
