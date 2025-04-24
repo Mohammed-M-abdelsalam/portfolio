@@ -19,9 +19,10 @@
 
 html{
     scrollbar-width: none;
-    scroll-padding: 50px;
+    scroll-padding: 80px;
 }
 body{
+    padding-top: 80px;
     overflow-x: hidden;
 }
 #app{
