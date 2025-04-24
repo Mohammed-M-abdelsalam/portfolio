@@ -1,6 +1,6 @@
 import './main.css'
 import img from '../../../assets/images/skills/soft-skills.gif'
-function Main(){
+function SkillsMain(){
     return (
         <main className='container py-3 d-flex justify-content-center align-items-center' style={{minHeight: '80vh'}}>
             <div className="row row-cols-1 row-cols-lg-2 g-3 align-items-center justify-content-center">
@@ -19,4 +19,4 @@ function Main(){
     );
 }
 
-export default Main;
+export default SkillsMain;
