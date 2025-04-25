@@ -20,26 +20,25 @@ function ProjectsMain(){
             }}
             modules={[Pagination]}
             >
-                <SwiperSlide className='container-fluid p-5'>
-                    <div className='row row-cols-1 row-cols-md-3 justify-content-around align-items-center'>
+                <SwiperSlide className='container-fluid p-5 d-flex justify-content-center align-items-center'>
+                    <div className='row row-cols-1 row-cols-md-2 justify-content-center align-items-center'>
                         <div className="content text-start">
                             <p className='fw-bold'>HTML & CSS</p>
                             <h2 className='fs-2 fw-bold'>Explore My Projects & Design</h2>
                             <p>Here you can find a collection of front-end projects I’ve built using pure HTML and CSS.</p>
                             <button className='btn'>Read More</button>
                         </div>
-                        <div className='parent py-3'
+                        <div
                         style={{ 
                             display: 'grid',
-                            gridTemplateColumns: 'minmax(0, auto) minmax(0, auto)',
-                            gridTemplateRows: 'minmax(0, auto) minmax(0, auto)',
-                            gap: '10px',
+                            padding: '0',
+                            gridTemplateColumns: '1fr 1fr',
                          }}
                         >
-                            <div style={{ minHeight: '200px', minWidth: '200px' }}>
+                            <div className='p-3' style={{ minHeight: '200px',}}>
                                 <img width={'100%'} src={htmlcss} alt="" />
                             </div>
-                            <div style={{ minHeight: '200px', minWidth: '200px' }}>
+                            <div className='p-3' style={{ minHeight: '200px'}}>
                                 <img width={'100%'} src={pc} alt="" />
                             </div>
                         </div>
@@ -56,7 +55,7 @@ function ProjectsMain(){
                     modules={[Pagination]}>
                     <SwiperSlide className='position-relative text-white'>
                     <img src={js1}  srcSet={`${js1} 1700w, ${js1700x2} 5120w`} alt="" />
-                    <div className='text-start position-absolute w-75' style={{ maxWidth: '500px', left: '20px', top: '100px' }}>
+                    <div className='text-start position-absolute w-75' style={{ maxWidth: '500px', left: '20px', top: '50px' }}>
                         <p className='fw-bold'>JavaScript Projects</p>
                         <h2 className='fs-2 fw-bold py-3'>Explore My JavaScript Projects</h2>
                         <p>
