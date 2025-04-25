@@ -36,10 +36,10 @@ function ProjectsMain(){
                             gap: '10px',
                          }}
                         >
-                            <div>
+                            <div style={{ minHeight: '200px', minWidth: '200px' }}>
                                 <img width={'100%'} src={htmlcss} alt="" />
                             </div>
-                            <div>
+                            <div style={{ minHeight: '200px', minWidth: '200px' }}>
                                 <img width={'100%'} src={pc} alt="" />
                             </div>
                         </div>
@@ -56,7 +56,7 @@ function ProjectsMain(){
                     modules={[Pagination]}>
                     <SwiperSlide className='position-relative text-white'>
                     <img src={js1}  srcSet={`${js1} 1700w, ${js1700x2} 5120w`} alt="" />
-                    <div className='text-start position-absolute' style={{ maxWidth: '600px', left: '50px', top: '100px' }}>
+                    <div className='text-start position-absolute w-75' style={{ maxWidth: '500px', left: '20px', top: '100px' }}>
                         <p className='fw-bold'>JavaScript Projects</p>
                         <h2 className='fs-2 fw-bold py-3'>Explore My JavaScript Projects</h2>
                         <p>
@@ -84,7 +84,6 @@ function ProjectsMain(){
                 </SwiperSlide>
                 <SwiperSlide>Horizontal Slide 3</SwiperSlide>
             </Swiper>
-            <div className="vh-100"></div>
         </main>
     )
 }
