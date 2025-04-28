@@ -17,7 +17,7 @@ function SimpleCard({ data, index}) {
       useAnimation(cardRef.current, animationObj);
   return (
     <div>
-      <div className="card overflow-hidden position-relative" ref={el => (cardRef.current[0] = el)} style={{ minHeight: '200px' }} aria-label={data.title} tabIndex={0}>
+      <div className="simple-card card overflow-hidden position-relative" ref={el => (cardRef.current[0] = el)} style={{ minHeight: '200px' }} aria-label={data.title} tabIndex={0}>
         <div className="card-body d-flex flex-column justify-content-center">
           <h3 className="card-title fs-4 fw-bold"> {data.title} </h3>
           <p className="card-text"> {data.content} </p>

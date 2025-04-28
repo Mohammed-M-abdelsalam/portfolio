@@ -1,0 +1,36 @@
+.ovelay-card-img{
+    position: absolute;
+    inset: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.6);
+    transform: translateY(100%);
+    transition: transform 0.5s;
+}
+.card-img:hover .ovelay-card-img{
+    transform: translateY(0);
+}
+.card-img:hover .ovelay-card-img a,
+.card-img:hover .ovelay-card-img h3{
+    animation: fadeIn 1s linear;
+    animation-delay: 0.1s;
+}
+.ovelay-card-img a{
+    color: #fff;
+    font-size: 1.8rem;
+    transition: color 0.3s;
+}
+.ovelay-card-img a:hover{
+    color: #f1ff1f;
+}
+
+@keyframes fadeIn{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}

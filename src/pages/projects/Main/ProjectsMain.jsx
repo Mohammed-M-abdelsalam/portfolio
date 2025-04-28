@@ -81,7 +81,6 @@ function ProjectsMain(){
                     ></SwiperSlide>
                 </Swiper>
                 </SwiperSlide>
-                <SwiperSlide>Horizontal Slide 3</SwiperSlide>
             </Swiper>
         </main>
     )

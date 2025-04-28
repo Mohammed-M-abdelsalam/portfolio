@@ -1,8 +1,8 @@
-.card{
+.simple-card{
     opacity: 0;
     transform: translateY(100px);
 }
-.card::after{
+.simple-card::after{
     content: "";
     position: absolute;
     top: 0;
