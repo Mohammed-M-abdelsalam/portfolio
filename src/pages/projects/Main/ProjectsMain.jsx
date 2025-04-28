@@ -48,7 +48,6 @@ function ProjectsMain(){
                 <Swiper
                     className="mySwiper2 swiper-v"
                     direction={'vertical'}
-                    spaceBetween={50}
                     pagination={{
                     clickable: true,
                     }}
