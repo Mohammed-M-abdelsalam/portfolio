@@ -15,7 +15,6 @@
 .card-img:hover .ovelay-card-img a,
 .card-img:hover .ovelay-card-img h3{
     animation: fadeIn 1s linear;
-    animation-delay: 0.1s;
 }
 .ovelay-card-img a{
     color: #fff;
