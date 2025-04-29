@@ -1,96 +1,36 @@
-.nav-container {
-    background-color: var(--mainColor);
+nav{
+    --bs-navbar-color: var(--typoColor) !important;
+    --bs-navbar-hover-color: var(--typoColor) !important;
+    --bs-navbar-active-color: var(--secoundaryColor) !important;
+    --bs-navbar-brand-color: var(--typoColor) !important;
+    --bs-navbar-brand-hover-color: var(--typoColor) !important; 
     box-shadow: 0 0 10px var(--shadowColor);
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    height: 80px;
-    z-index: 1000;
 }
 
-.logo{
-    color: var(--diffrentColor);
-}
-
-nav a{
-    color: var(--typoColor);
-    transition: transform 0.5s ease-in-out;
-}
 nav a::after{
     content: '';
     width: 0;
     background-color: var(--secoundaryColor);
     position: absolute;
-    bottom: -5px;
-    left: 0;
+    top: 0;
+    bottom: 0;
+    left: -10px;
     border-radius: 10px;
     transition: 0.5s ease-in-out;
 }
 
-nav .active{
-    color: var(--secoundaryColor);
-}
 nav .active::after{
     content: '';
-    width: 100%;
-    height: 3px;
-    background-color: var(--secoundaryColor);
-    position: absolute;
-    bottom: -5px;
-    left: 0;
-    border-radius: 10px;
+    width: 5px;
 }
 
-nav ul{
-    display: flex;
-    width: 15em;
-    justify-content: space-between;
-    align-items: center;
-    list-style: none;
+.menu-btn{
+    color: var(--diffrentColor);
+    box-shadow: none !important;
 }
-
-.dark-mode, .menu, .close-nav, .dark-mode-mobile{
+.dark-mode{
     border: none;
     background-color: transparent;
     cursor: pointer;
     color: var(--diffrentColor);
-}
-.dark-mode-mobile, .menu, .close-nav{
-    display: none;
-}
-.close-nav{
-    position: absolute;
-    top: 1em;
-    right: 1em;
-}
-@media screen and (max-width: 768px){
-    nav{
-        flex-direction: column;
-        gap: 1em;
-        position: absolute;
-        top: 0;
-        right: 0;
-        transform: translate(0, -100%);
-        background-color: var(--mainColor);
-        padding: 2em;
-    }
-    nav ul{
-        flex-direction: column;
-        gap: 1em;
-        width: 100%;
-        height: 40vh;
-        padding: 2em;
-    }
-    .active-nav{
-        transform: translate(0, 0);
-        transition: 0.5s ease-in-out;
-    }
-    .dark-mode-mobile, .menu, .close-nav{
-        display: block;
-    }
-    .dark-mode{
-        display: none;
-    }
-    
 }

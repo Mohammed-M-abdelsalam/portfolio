@@ -1,9 +1,15 @@
-import {Routes, Route} from 'react-router-dom';
+import {Routes, Route, useLocation} from 'react-router-dom';
 import Home from '../pages/Home/Home';
 import Skills from '../pages/Skills/Skills';
 import Projects from '../pages/projects/Projects';
 import ProjectDetails from '../pages/projects/ProjectDetails/ProjectDetails';
+import { useEffect } from 'react';
+
 function Routing() {
+    const {pathname} = useLocation();
+    useEffect(() => {
+        window.scrollTo(0, 0);       
+    }, [pathname]);
     return (
         <Routes>
             <Route path='/' element={<Home />}></Route>  

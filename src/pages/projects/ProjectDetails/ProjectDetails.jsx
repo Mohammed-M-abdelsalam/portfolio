@@ -1,13 +1,10 @@
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 import ProjectsArr from '../ProjectsArr/ProjectsArr'; 
 import { useParams } from 'react-router-dom';
 import { FaArrowRight } from 'react-icons/fa';
 function ProjectDetails(){
     const {id} = useParams();
     const [projectState] = useState(ProjectsArr.find(project => project.id == id));
-    useEffect(() => {
-        window.scrollTo(0, 0);
-    })
     return(
         <section className='container' style={{ minHeight: 'calc(100vh - 100px)' }}>
             <div className="row row-cols-lg-2 g-4 mt-5">
