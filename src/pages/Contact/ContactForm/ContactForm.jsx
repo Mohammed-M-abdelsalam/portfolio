@@ -43,7 +43,7 @@ function ContactForm(){
             onChange={handleChange}
             required
         ></textarea>
-        <button className='btn mt-3 w-25 mx-auto' type="submit">Send</button>
+        <button className='btn mt-3 mx-auto' type="submit">Send</button>
         </form>
     </div>
   );
