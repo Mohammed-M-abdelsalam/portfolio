@@ -1,7 +1,7 @@
-import { NavLink } from "react-router-dom"
+import { Link, NavLink } from "react-router-dom"
 import {HiMenu} from 'react-icons/hi';
 import "./nav.css"
-
+import cv from '../../assets/pdf/cv.pdf';
 function Nav({toggleTheme}) {
 
   return (
@@ -20,7 +20,7 @@ function Nav({toggleTheme}) {
           <HiMenu size={30} />
         </button>
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul className="navbar-nav w-25 me-auto py-2 mb-lg-0 d-flex justify-content-between gap-4">
+            <ul className="navbar-nav w-25 me-auto py-2 mb-lg-0 d-flex justify-content-between gap-2 mb-3">
                 <li className="nav-item">
                     <NavLink to="/" className="nav-link position-relative" aria-current="page">Home</NavLink>
                 </li>
@@ -30,23 +30,22 @@ function Nav({toggleTheme}) {
                 <li className="nav-item">
                     <NavLink to="/projects" className="nav-link position-relative">Projects</NavLink>
                 </li>
-                {/* <li className="nav-item dropdown">
+                <li className="nav-item dropdown">
                     <button
                         className="nav-link dropdown-toggle"
                         data-bs-toggle="dropdown"
                         aria-expanded="false"
                     >
-                        Dropdown
+                        MY INFO
                     </button>
-                    <ul className="dropdown-menu">
-                        <li><a className="dropdown-item" href="#">Action</a></li>
-                        <li><a className="dropdown-item" href="#">Another action</a></li>
-                        <li><hr className="dropdown-divider" /></li>
-                        <li><a className="dropdown-item" href="#">Something else here</a></li>
+                    <ul className="dropdown-ul dropdown-menu p-0" style={{ backgroundColor: 'var(--mainColor)', border: '1px solid var(--typoColor)' }}>
+                        <li><Link to="/contact" className="dropdown-item hover-link">contact</Link></li>
+                        <li><hr className="dropdown-divider m-0" style={{ backgroundColor: 'var(--typoColor)' }} /></li>
+                        <li><a href={cv} download='Mohamed_Magdy_CV.pdf' className="dropdown-item">Download CV</a></li>
                     </ul>
-                </li> */}
+                </li>
             </ul>
-            <button className="dark-mode bg-transparent py-3 border-0" aria-label={localStorage.getItem("theme") === "dark" ? "switch tolight mode" : "switch to dark mode"} onClick={toggleTheme}>
+            <button className="dark-mode bg-transparent rounded-circle d-flex justify-content-center align-items-center" aria-label={localStorage.getItem("theme") === "dark" ? "switch tolight mode" : "switch to dark mode"} onClick={toggleTheme}>
                 <span className="material-symbols-outlined"> {localStorage.getItem("theme") === "dark" ? "light_mode" : "dark_mode"}</span>
             </button>
         </div>

@@ -28,9 +28,20 @@ nav .active::after{
     color: var(--diffrentColor);
     box-shadow: none !important;
 }
+
+.dropdown-ul a{
+    color: var(--typoColor);
+    transition: background-color 0.5s ease-in-out, color 0.5s ease-in-out;
+}
+.dropdown-ul a:hover, .dropdown-ul a:focus{
+    background-color: var(--diffrentColor);
+    color: var(--mainColor);
+}
+
 .dark-mode{
-    border: none;
-    background-color: transparent;
+    width: 2.5em;
+    height: 2.5em;
     cursor: pointer;
     color: var(--diffrentColor);
+    border: 1px solid var(--diffrentColor);
 }
