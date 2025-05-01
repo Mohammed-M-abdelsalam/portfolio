@@ -20,6 +20,7 @@ function ContactForm(){
     <div className='container'>
         <form className='contact-form mx-auto mb-4' action="https://formsubmit.co/0a2888d80945f4875d5d435ecfd0e291" method="POST">
         <h3 className='text-white'>Contact Me</h3>
+        <input type="hidden" name="_captcha" value="false"></input>
         <input
             type="text"
             name="name"
