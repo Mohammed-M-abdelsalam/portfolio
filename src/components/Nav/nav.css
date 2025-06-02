@@ -4,7 +4,7 @@ nav{
     --bs-navbar-active-color: var(--secoundaryColor) !important;
     --bs-navbar-brand-color: var(--typoColor) !important;
     --bs-navbar-brand-hover-color: var(--typoColor) !important; 
-    box-shadow: 0 0 10px var(--shadowColor);
+    box-shadow: 0 0 5px var(--shadowColor);
 }
 
 nav a::after{
@@ -26,7 +26,6 @@ nav .active::after{
 
 .menu-btn{
     color: var(--diffrentColor);
-    box-shadow: none !important;
 }
 
 .dropdown-ul a{

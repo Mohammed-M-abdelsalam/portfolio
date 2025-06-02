@@ -2,10 +2,26 @@ import { Link, NavLink } from "react-router-dom"
 import {HiMenu} from 'react-icons/hi';
 import "./nav.css"
 import cv from '../../assets/pdf/cv.pdf';
+import { useEffect, useRef } from "react";
 function Nav({toggleTheme}) {
-
+  const navRef = useRef();
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 100) {
+        navRef.current.classList.add('opacity-75');
+        navRef.current.style.transition = 'opacity 0.5s';
+      } else {
+        navRef.current.classList.remove('opacity-75');
+        navRef.current.style.transition = 'none';
+      }
+    }
+    window.addEventListener('scroll', handleScroll);
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    }
+  })
   return (
-    <nav className="navbar navbar-expand-lg position-fixed top-0 w-100 z-3" style={{  minHeight: '80px', backgroundColor: 'var(--mainColor)', color: 'var(--typoColor)' }}>
+    <nav ref={navRef} className="navbar navbar-expand-lg position-fixed top-0 w-100 z-3" style={{  minHeight: '80px', backgroundColor: 'var(--mainColor)', color: 'var(--typoColor)' }}>
       <div className="container-fluid px-5">
         <div className="navbar-brand fw-bold fs-2 me-5">Mohammed</div>
         <button
