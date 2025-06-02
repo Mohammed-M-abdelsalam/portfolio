@@ -6,6 +6,12 @@ header>main{
     min-height: 100vh;
 }
 
+.loader{
+    inset: 0;
+    background-color: gray;
+    animation: img-loader 1s infinite alternate;
+}
+
 header main .img>.personal-img{
     transition: transform 0.5s;
     animation: circle 4s;
@@ -25,25 +31,33 @@ header .name{
 
 
 @keyframes circle {
-    0% {
-      clip-path: circle(100% at 50% 50%);
-      transform: scale(1.5);
-    }
-    20% {
-      clip-path: circle(15% at 50% 50%);
-    }
-    40% {
-      clip-path: circle(15% at 30% 50%);
-    }
-    60% {
-      clip-path: circle(15% at 80% 50%);
-    }
-    80% {
-      clip-path: circle(15% at 50% 50%);
-    }
-    100% {
-      clip-path: circle(100% at 50% 50%);
-    }
+  0% {
+    clip-path: circle(100% at 50% 50%);
+    transform: scale(1.5);
   }
+  20% {
+    clip-path: circle(15% at 50% 50%);
+  }
+  40% {
+    clip-path: circle(15% at 30% 50%);
+  }
+  60% {
+    clip-path: circle(15% at 80% 50%);
+  }
+  80% {
+    clip-path: circle(15% at 50% 50%);
+  }
+  100% {
+    clip-path: circle(100% at 50% 50%);
+  }
+}
 
+@keyframes img-loader {
+  0%{
+    opacity: 80%;
+  }
+  100%{
+    opacity: 100%;
+  }
+}
 

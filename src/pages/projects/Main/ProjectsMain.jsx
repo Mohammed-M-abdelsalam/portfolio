@@ -20,13 +20,12 @@ function ProjectsMain(){
             }}
             modules={[Pagination]}
             >
-                <SwiperSlide className='container-fluid p-5 d-flex justify-content-center align-items-center'>
+                <SwiperSlide className='container-fluid p-lg-5 d-flex justify-content-center align-items-center'>
                     <div className='row row-cols-1 row-cols-md-2 justify-content-center align-items-center'>
                         <div className="content text-start">
                             <p className='fw-bold'>HTML & CSS</p>
                             <h2 className='fs-2 fw-bold'>Explore My Projects & Design</h2>
                             <p>Here you can find a collection of front-end projects I’ve built using pure HTML and CSS.</p>
-                            <button className='btn'>Read More</button>
                         </div>
                         <div
                         style={{ 

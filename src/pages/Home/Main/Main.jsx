@@ -29,7 +29,8 @@ function HomeMain() {
                         <p>Aspiring front-end developer with solid  foundation in web development and a passion for building robust, responsive web appications</p>
                         <Button callback={btnCallback}> get in touch </Button>
                     </div>
-                    <div className='img overflow-hidden rounded-2 p-0' style={{width: '400px', minHeight: '300px'}}>
+                    <div className='img position-relative overflow-hidden rounded-2 p-0' style={{width: '400px', minHeight: '400px'}}>
+                        { !isLoaded && <div className='loader position-absolute'></div> }
                         <img onLoad={()=>setIsLoaded(true)} className={isLoaded ? 'personal-img' : 'd-none'} width={'100%'} src={img} alt="personal photo" />
                     </div>
                 </div>
